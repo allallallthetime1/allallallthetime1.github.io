@@ -26,11 +26,16 @@
 <body>
 
    <!---<a href="menu.html">--->
-        <video autoplay muted loop>
-            <source src="allallallthetime1animation.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </a>
+     <video id="introVideo" autoplay muted loop playsinline webkit-playsinline>
+    <source src="allallallthetime1animation.mp4" type="video/mp4">
+</video>
+
+<script>
+    document.getElementById("introVideo").addEventListener("click", function () {
+        window.location.href = "menu.html";
+    });
+</script>
+     </a>
 
 </body>
 </html>
