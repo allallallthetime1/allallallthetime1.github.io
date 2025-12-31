@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>allallallthetime1</title>
-    <style>
+   
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+   
+   <style>
+		
+		@keyframes ambientFade {
+    0%   { background-color: #000; }
+    50%  { background-color: #121212; }
+    100% { background-color: #000; }
+}
+
+html, body {
+    animation: ambientFade 10s ease-in-out infinite;
+}
+
         body {
             margin: 0;
             padding: 40px;
             background-color: black;
-            color: white;
+            color: gray;
             font-family: "Times New Roman", Times, serif;
             font-size: 24px;
         }
 
         a {
-            color: white;
+            color: gray;
             text-decoration: none;
         }
 
@@ -30,16 +46,16 @@
 <body>
 
     <div class="menu-item">
-        <a href="about.html">about</a>
-    </div>
-
-    <div class="menu-item">
         <a href="releases.html">releases</a>
     </div>
 
     <div class="menu-item">
-        <a href="live.html">live</a>
+        <a href="liveclickthrough.html">live</a>
     </div>
+
+    <!--<div class="menu-item">
+        <a href="about.html">about</a>
+    </div> -->
 
     <div class="menu-item">
         <a href="mailto:allallallthetime1@gmail.com">contact</a>
